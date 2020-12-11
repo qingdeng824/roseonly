@@ -1,0 +1,291 @@
+/* 公共样式
+包含头部 和 尾部的页面信息 */
+
+
+
+
+/* 清除默认间距 */
+body,p,h1,h2,h3,h4,h5,h6,input,button,ol,dl,dd,ul,hr{
+	margin: 0;
+	padding: 0;
+}
+/* 清除a的下划线 */
+a, a:hover, a:active, a:link, a:target {
+    text-decoration: none;
+  }
+/* 清除列表小点 */
+li{
+	list-style-type: none;
+}
+/* 清除input和button默认带的边框和点击之后的边框 */
+input,button{
+	border: 0;
+	outline: none;
+}
+hr{
+	border: 0;
+}
+/* 浏览器解析所有img的时候都会向下多解析3像素 */
+img{ 
+	/* 方法1 转换成块元素 */
+	display: block;
+	/* vertical-align: top; */
+	/* 垂直靠上对齐 */
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+i{
+	font-style: normal;
+}
+/* b{
+	font-weight: normal;
+} */
+
+
+/* 版心 */
+.center{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 网页头部  公共样式 */
+.rsheader{
+    width: 100%;
+    height: 40px;
+    background-color: #414141;
+}
+.rsheader .head{
+    width: 1240px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #afafaf;
+
+}
+.header-left-left{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    box-shadow: -3px 1px 1px rgba(0, 0, 0, 0.3) inset;
+
+}
+.header1{
+    margin-left: 10px;
+}
+.header2{
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+.head-a1,.head-a2{
+    width: 128px;
+    height: 40px;
+    display: block;
+}
+.head-a2:hover{
+    background-color: #fff;
+}
+.header-left-left span{
+    padding-right: 15px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+/* .header-right li{
+    margin: 0 5px;
+} */
+.header-right li:nth-of-type(1){
+    width: 13px;
+    height: 16px;
+    background: url('../images/img5.svg') no-repeat;
+    margin-left: 8px;
+    
+}
+.header-right li:nth-of-type(2),.header-right li:nth-of-type(5){
+    width: 1px;
+    height: 19px;
+    background: url('../images/cion.jpg') no-repeat;
+    margin: 0 10px;
+
+}
+.header-right li:nth-of-type(3){
+    width: 16px;
+    height: 18px;
+    background: url('../images/img6.svg') no-repeat;
+}
+.header-right li:nth-of-type(4){
+    color: #fff;
+    width: 10px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.header-right li:nth-of-type(6){
+    width: 12px;
+    height: 16px;
+    background: url('../images/img7.svg');
+
+}
+
+/* logo区域 */
+.logo-container{
+    height: 80px;
+    width: 100%;
+    background-color: #414141;
+    box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.5);
+}
+.logo-container a{
+    background: url('../images/logo-container.jpg');
+    width: 143px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+}
+/* 一级菜单 */
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: #414141;
+}
+.nav > ul{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav > ul li a:hover{
+    background-color: #fff;
+    color: #414141;
+}
+.nav > ul li a{
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0 24px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+.nav > ul li div img{
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* 二级菜单 */
+.nav >ul li div{
+    width: 100%;
+    height: 320px;
+    border-bottom: solid 3px #414141;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    clear: both;
+    background: #414141;
+    min-width: 1240px;
+    color: #fff;
+  }
+  .footer_box {
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .footer_box ul {
+    margin-top: 0;
+    float: left;
+    padding: 0 66px;
+    text-align: center;
+  }
+  .footer_box ul p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .footer_box ul li {
+    list-style: none;
+    line-height: 30px;
+    color: #000;
+    text-align: left;
+    margin-left: 1px;
+  }
+  .footer_box ul li a {
+    color: #afafaf;
+    font-size: 14px;
+  }
+  .new_r {
+    float: right;
+  }
+  dl, dt, dd {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .new_r dt {
+    float: left;
+    margin-right: 25px;
+    width: 102px;
+    height: 101px;
+    background: url(https://www.roseonly.com.cn/upload/syspic_new/15554856333871976.jpg);
+    background-size: 100%;
+  }
+  .footer .new_r dd {
+    float: left;
+    color: #afafaf;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .footer .new_r dd h2 {
+    font-size: 16px;
+  }
+  .footer .new_r dd div {
+    padding-top: 11px;
+  }
+  .footer-yyzz {
+    display: block !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 240px;
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+  }
+  .footer-yyzz a{
+    color: #afafaf;
+  }
+  .foot-nav {
+    width: 1240px;
+    height: 58px;
+    font-size: 14px;
+    background: #414141;
+    color: #afafaf;
+    clear: both;
+    text-align: right;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .foot-nav a {
+    color: #afafaf;
+  }
+  .header-right span{
+    color: #fff;
+    font-size: 12px;
+  }
+  
